@@ -12,7 +12,7 @@ This SQL project involved analyzing a database for a movie DVD rental store, foc
 SELECT first_name,last_name, email, store_id
 FROM staff; <br />
 
-
+<br />
 2. **Inventory Counts**:
    - **Question:** We will need separate counts of inventory items held at your two stores.
    - **Answer:** 
