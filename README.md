@@ -10,7 +10,7 @@ This SQL project involved analyzing a database for a movie DVD rental store, foc
    - **Question:** We will need a list of all staff members, including their first and last names, email addresses, and the store identification number where they work.
    - **Answer:** 
 SELECT first_name,last_name, email, store_id
-FROM staff;
+FROM staff; <br />
 
 
 2. **Inventory Counts**:
