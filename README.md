@@ -12,12 +12,14 @@ This SQL project involved analyzing a database for a movie DVD rental store, foc
 SELECT first_name,last_name, email, store_id
 FROM staff;
 
+
 2. **Inventory Counts**:
    - **Question:** We will need separate counts of inventory items held at your two stores.
    - **Answer:** 
 SELECT store_id as 'Store', COUNT(store_id) 
 FROM inventory
 GROUP BY store_id;
+
 
 3. **Active Customers Count**:
    - **Question:** We will need a count of active customers for each of your stores. Separately, please.
@@ -48,11 +50,13 @@ FROM inventory i JOIN film_category fc
 ON fc.film_id = i.film_id 
 GROUP BY i.store_id;
 
+
 6. **Film Replacement Costs**:
    - **Question:** We would like to understand the replacement cost of your films. Please provide the replacement cost for the film that is least expensive to replace, the most expensive to replace, and the average of all films you carry.
    - **Answer:**
 SELECT MIN(replacement_cost) least_expensive, MAX(replacement_cost) most_expensive, AVG(replacement_cost) as average 
 FROM film;
+
 
 7. **Payment Processing Analysis**:
    - **Question:** We are interested in having you put payment monitoring systems and maximum payment processing restrictions in place in order to minimize the future risk of fraud by your staff. Please provide the average payment you processed, as well as the maximum payment you have processed.
